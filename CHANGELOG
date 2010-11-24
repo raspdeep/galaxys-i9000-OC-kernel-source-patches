@@ -1,0 +1,25 @@
+v217 UV alpha
+- quick fix on corrupted /system
+- /sbin/busybox mount -t rfs -o check=no /dev/block/stl9 /system
+
+Highly Experimental 1.28Ghz / 1.4Ghz kernels v216
+- Only for those that know what they are doing - no support
+- BACKUP YOUR STUFF
+- Disable UV and UV startup script
+- Post your benchmark for bragging rights 
+- Linpack 17.9 (1.28Ghz) / 19.8 (1.4Ghz)
+
+v216 UV alpha
+- added BLN
+
+
+Features
+- voltage scaling
+- full UV user control via sysfs
+- works on all governor
+- echo "50 50 150 75 75 100" > /sys/devices/system/cpu/cpu0/cpufreq/UV_mV_table
+- column 1 for 1.2ghz, 2 for 1ghz, 3 for 800mhz, 4 for 400mhz, 5 for 200mhz, lastly 100mhz
+- values are mV
+- Use latest xan's app if you dont want to mess with commands - here
+- added BLN (from v216 up)
+- Hz=300
